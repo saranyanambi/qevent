@@ -17,7 +17,7 @@ const EventCard = ({ eventData }) => {
             alt="Bonnie image"
           />
           <div className="flex gap-2 items-center">
-            {eventData.tags.map((tag) => (
+            {eventData.tags?.map((tag) => (
               <Tag text={tag} key={tag} />
             ))}
           </div>
